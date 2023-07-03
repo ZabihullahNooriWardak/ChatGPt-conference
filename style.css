@@ -1,0 +1,152 @@
+/* link to css Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --redColor: rgb(236, 67, 39);
+}
+
+html {
+  font-size: 48%;
+}
+
+.header-container {
+  display: none;
+}
+
+#bx {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 63.2%;
+  }
+
+  .header-container {
+    flex-direction: column;
+    width: 100vw;
+    display: flex;
+  }
+
+  #bx {
+    display: none;
+  }
+
+  .header-first {
+    background-color: rgb(62, 62, 62);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4rem;
+  }
+
+  .header-first ul {
+    width: auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+  }
+
+  .header-first ul li {
+    margin-right: 3rem;
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .header-second ul li {
+    margin-right: 2rem;
+  }
+
+  .header-second ul li:first-child {
+    color: var(--redColor);
+  }
+
+  .header-second ul li:last-child {
+    border: 4px solid var(--redColor);
+    color: var(--redColor);
+    padding: 0.6rem;
+  }
+
+  .header-second {
+    background-color: #fafafa;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header-second ul {
+    font-family: "Lato", sans-serif;
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-second img {
+    width: 8%;
+    border-radius: 1rem;
+  }
+
+  .home-container {
+    width: 100vw;
+    background-image: url(images/backgroundIstock.jpg);
+    background-size: contain;
+  }
+
+  section.home {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    align-items: flex-start;
+    margin-left: 9rem;
+    justify-content: space-around;
+  }
+
+  section.home p:first-child {
+    margin-top: 2rem;
+    color: var(--redColor);
+    font-size: 2.2rem;
+    font-family: "Lato", sans-serif;
+  }
+
+  section.home h1 {
+    color: var(--redColor);
+    font-size: 3.8rem;
+    font-family: "Lato", sans-serif;
+  }
+
+  section.home p#second {
+    color: #515151;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.255px;
+  }
+
+  section.home h4 {
+    color: #595959;
+    font-size: 2.3rem;
+    font-family: "Gothic", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  section.home h6 {
+    color: #868686;
+    font-size: 2rem;
+    font-family: "Gothic", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+}

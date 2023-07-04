@@ -73,7 +73,7 @@ section.home h6 {
 }
 
 .home-container {
-  width: 100vw;
+  /* width: 100vw; */
   background-image: url(images/backgroundIstock.jpg);
   background-size: contain;
 }
@@ -308,7 +308,6 @@ footer.second p {
 
   .header-container {
     flex-direction: column;
-    width: 100vw;
     display: flex;
   }
 
@@ -327,6 +326,7 @@ footer.second p {
     font-weight: 400;
     padding-bottom: 3rem;
   }
+
   #bx {
     display: none;
   }

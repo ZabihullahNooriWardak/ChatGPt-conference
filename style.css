@@ -65,11 +65,12 @@ html {
 }
 
 div.card:hover{
-transform: scale(1.08)
+transform: scale(1.08);
+background-color: black;
 
 }
 div.card{
-    transition: transform 0.5s ease;
+    transition: all 0.5s ease;
 }
 .home {
   height: 90vh;

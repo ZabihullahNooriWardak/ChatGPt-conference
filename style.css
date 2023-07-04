@@ -25,6 +25,13 @@ html {
   font-size: 3rem;
 }
 
+div.card:hover{
+transform: scale(1.08)
+
+}
+div.card{
+    transition: transform 0.5s ease;
+}
 .home {
   height: 90vh;
   display: flex;

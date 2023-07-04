@@ -15,6 +15,8 @@ html {
   font-size: 48%;
 }
 
+/*  hero section */
+
 .header-container {
   display: none;
 }
@@ -23,9 +25,268 @@ html {
   font-size: 3rem;
 }
 
+.home {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  margin-left: 2rem;
+}
+
+section.home p:first-child {
+  margin-top: 2rem;
+  color: var(--redColor);
+  font-size: 2.2rem;
+  font-family: "Lato", sans-serif;
+}
+
+section.home h1 {
+  color: var(--redColor);
+  font-size: 3.8rem;
+  font-family: "Lato", sans-serif;
+}
+
+section.home p#second {
+  color: #515151;
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.255px;
+}
+
+section.home h4 {
+  color: #595959;
+  font-size: 2.3rem;
+  font-family: "Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+
+section.home h6 {
+  color: #868686;
+  font-size: 2rem;
+  font-family: "Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.home-container {
+  width: 100vw;
+  background-image: url(images/backgroundIstock.jpg);
+  background-size: contain;
+}
+
+/* program section mobile  */
+
+section.program {
+  background-image: url(images/programBackground.png);
+  background-size: contain;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+section.program h3 {
+  padding-top: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+section.program hr {
+  width: 8rem;
+  height: 0.2rem;
+  margin: 2rem auto;
+  background-color: red;
+}
+
+.card {
+  margin-bottom: 0.268rem;
+  display: flex;
+  height: 11rem;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  background-color: rgb(60, 63, 70);
+}
+
+div.card i {
+  margin-left: 1rem;
+  font-size: 2.8rem;
+  color: white;
+}
+
+.card h4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.47rem;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--redColor);
+}
+
+.card p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+section.program a {
+  display: none;
+}
+
+section.program div.join {
+  margin: 2rem auto;
+  width: 70%;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--redColor);
+}
+
+/* Speaker section */
+
+.speakers h3 {
+  font-size: 20px;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.speakers hr:first-child {
+  width: 8rem;
+  height: 0.2rem;
+  margin: 2rem auto;
+  background-color: red;
+}
+
+div.speaker div.images {
+  position: relative;
+  width: 700px;
+}
+
+div.speaker img.man {
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+div.details {
+  margin-right: 0rem;
+  margin-top: 0;
+  width: 210vw;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+div.speaker {
+  margin-bottom: 2rem;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+div.speaker img.speaker {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
+
+div.speaker img {
+  width: 150px;
+  height: 150px;
+}
+
+div.details h4 {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+div.details h5 {
+  margin-bottom: 1rem;
+  color: #f78c89;
+  font-size: 17px;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+div.details hr {
+  margin-bottom: 1.5rem;
+  width: 3rem;
+  height: 0.2rem;
+  background-color: grey;
+}
+
+div.details p {
+  font-size: 13px;
+  text-overflow: hidden;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
 @media screen and (min-width: 768px) {
+  div.container-speaker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  div.container-speaker div.speaker div.images {
+    width: 1880px;
+  }
+
+  div.speaker {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+
   html {
     font-size: 63.2%;
+  }
+
+  section.home h6 {
+    margin-bottom: 3rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90vw;
+    margin: 0 auto;
+    column-gap: 0.3rem;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: auto;
   }
 
   .header-container {
@@ -34,6 +295,21 @@ html {
     display: flex;
   }
 
+  div.join {
+    display: none;
+  }
+
+  .program a:last-child {
+    display: block;
+    margin: 3rem auto;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 3rem;
+  }
   #bx {
     display: none;
   }
@@ -60,6 +336,10 @@ html {
     color: #fff;
   }
 
+  section.program {
+    height: auto;
+    padding-bottom: 0;
+  }
   .header-second ul li {
     margin-right: 2rem;
   }
@@ -75,6 +355,7 @@ html {
   }
 
   .header-second {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #fafafa;
     font-size: 2.2rem;
     display: flex;
@@ -96,10 +377,8 @@ html {
     border-radius: 1rem;
   }
 
-  .home-container {
-    width: 100vw;
-    background-image: url(images/backgroundIstock.jpg);
-    background-size: contain;
+  div.details p {
+    font-size: 14px;
   }
 
   section.home {
@@ -110,43 +389,5 @@ html {
     align-items: flex-start;
     margin-left: 9rem;
     justify-content: space-around;
-  }
-
-  section.home p:first-child {
-    margin-top: 2rem;
-    color: var(--redColor);
-    font-size: 2.2rem;
-    font-family: "Lato", sans-serif;
-  }
-
-  section.home h1 {
-    color: var(--redColor);
-    font-size: 3.8rem;
-    font-family: "Lato", sans-serif;
-  }
-
-  section.home p#second {
-    color: #515151;
-    font-size: 2rem;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: -0.255px;
-  }
-
-  section.home h4 {
-    color: #595959;
-    font-size: 2.3rem;
-    font-family: "Gothic", sans-serif;
-    font-style: normal;
-    font-weight: 900;
-  }
-
-  section.home h6 {
-    color: #868686;
-    font-size: 2rem;
-    font-family: "Gothic", sans-serif;
-    font-style: normal;
-    font-weight: 700;
   }
 }

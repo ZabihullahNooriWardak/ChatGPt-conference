@@ -166,54 +166,19 @@ section.program div.join {
   margin-top: 2rem;
 }
 
-.speakers hr:first-child {
-  width: 8rem;
-  height: 0.2rem;
-  margin: 2rem auto;
-  background-color: red;
-}
-
-div.speaker div.images {
-  position: relative;
-  width: 700px;
-}
-
-div.speaker img.man {
-  z-index: 1;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-}
-
 div.details {
-  margin-right: 0rem;
-  margin-top: 0;
-  width: 210vw;
+  margin-left: 3rem;
   display: flex;
-  height: 100%;
   flex-direction: column;
 }
 
 div.speaker {
-  margin-bottom: 2rem;
-  height: auto;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
 }
 
 div.speaker img.speaker {
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80px;
-  height: 80px;
-}
-
-div.speaker img {
-  width: 150px;
-  height: 150px;
+  height: 70px;
+  width: 70px;
 }
 
 div.details h4 {
@@ -233,8 +198,8 @@ div.details h5 {
   font-weight: 700;
 }
 
-div.details hr {
-  margin-bottom: 1.5rem;
+.speakers div.speaker .details hr {
+  margin: 1rem 0;
   width: 3rem;
   height: 0.2rem;
   background-color: grey;
@@ -247,16 +212,68 @@ div.details p {
   font-style: normal;
   font-weight: 700;
 }
+div.speaker div.images img.man {
+  position: relative;
+  bottom: 60px;
+  left: 17px;
+  width: 150px;
+  height: 150px;
+}
 
+section.speakers hr {
+  width: 8rem;
+  height: 0.3rem;
+  background-color: red;
+  margin: 2rem auto;
+}
+
+footer.first {
+    padding: 3rem 0;
+  background-color: rgb(65, 66, 70);
+}
+
+footer.first p:first-child {
+  color: white;
+  font-family: lato, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+footer.first hr {
+  width: 5rem;
+}
+
+div.company img {
+  margin-bottom: 2rem;
+}
+
+div.company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer.second{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem auto;
+}
+footer.second img {
+  width: 14%;
+  border-radius: 1rem;
+}
+
+footer.second p {
+  font-family: lato, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
 @media screen and (min-width: 768px) {
   div.container-speaker {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-
-  div.container-speaker div.speaker div.images {
-    width: 1880px;
   }
 
   div.speaker {

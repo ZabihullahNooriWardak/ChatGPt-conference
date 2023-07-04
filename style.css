@@ -67,6 +67,7 @@ html {
 div.card:hover{
 transform: scale(1.08);
 background-color: black;
+box-shadow: 0 3px 4px rgb(255, 255, 255), 0 -3px 7px rgb(255, 255, 255);
 
 }
 div.card{

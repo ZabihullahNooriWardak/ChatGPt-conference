@@ -15,6 +15,43 @@ html {
   font-size: 48%;
 }
 
+/* Burger Menu items  */
+/* burger-menue actions */
+.burger-menue {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #3c3a39;
+  color: #fff5e1;
+  font-size: 3.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 4.4rem;
+}
+
+.burger-menue i {
+  
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+.burger-menue ul{
+  text-align: center;
+}
+.burger-menue ul li {
+  padding-bottom: 1.5rem;
+  list-style-type: none;
+  margin-top: 3rem;
+  border-bottom: 1px solid #6f6c6b;
+}
+.burger-menue ul li a {
+  color: white;
+  text-decoration: none;
+
+}
+
 /*  hero section */
 
 .header-container {
@@ -23,6 +60,8 @@ html {
 
 #bx {
   font-size: 3rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 div.card:hover{

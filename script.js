@@ -13,6 +13,10 @@ burgerMenuX.addEventListener('click', () => {
 const burgerMenu = document.querySelector('.burger-menue .bx');
 burgerMenu.addEventListener('click', () => {
   document.querySelector('.burger-menue').style.display = 'none';
+  const arrImages = document.getElementsByClassName('images');
+  for (let i = 0; i < arrImages.length; i += 1) {
+    arrImages[i].style.display = 'inline';
+  }
 });
 
 // for hiding burgerMenu when clicking popUp
@@ -20,6 +24,10 @@ const menuArray = document.getElementsByClassName('menue');
 for (let i = 0; i < menuArray.length; i += 1) {
   menuArray[i].addEventListener('click', () => {
     document.querySelector('.burger-menue').style.display = 'none';
+    const arrImages = document.getElementsByClassName('images');
+    for (let i = 0; i < arrImages.length; i += 1) {
+      arrImages[i].style.display = 'inline';
+    }
   });
 }
 // object for creating dynamic cards
@@ -81,34 +89,35 @@ const ArraySpeakers = [
 ];
 
 // card creating started
-const containerSpeaker = document.querySelector('.container-speaker');
-
-for (let i = 0; i < 6; i += 1) {
-  const speakerImage = document.createElement('img');
-  speakerImage.src = 'images/speaker.jpg';
-  speakerImage.className = 'speaker';
-  const speaker = document.createElement('div');
-  speaker.className = 'speaker';
-  const images = document.createElement('div');
-  images.className = 'images';
-  const personImage = document.createElement('img');
-  personImage.className = 'man';
-  const detail = document.createElement('div');
-  detail.className = 'details';
-  const nam = document.createElement('h4');
-  const job = document.createElement('h5');
-  const hr = document.createElement('hr');
-  const description = document.createElement('p');
-  speaker.appendChild(images);
-  images.appendChild(speakerImage);
-  images.appendChild(personImage);
-  detail.appendChild(nam);
-  detail.appendChild(job);
-  detail.append(hr, description);
-  speaker.appendChild(detail);
-  personImage.src = ArraySpeakers[i].path;
-  nam.textContent = ArraySpeakers[i].name;
-  job.textContent = ArraySpeakers[i].job;
-  description.textContent = ArraySpeakers[i].description;
-  containerSpeaker.appendChild(speaker);
-}
+window.onload = () => {
+  const containerSpeaker = document.querySelector('.container-speaker');
+  for (let i = 0; i < 6; i += 1) {
+    const speakerImage = document.createElement('img');
+    speakerImage.src = 'images/speaker.jpg';
+    speakerImage.className = 'speaker';
+    const speaker = document.createElement('div');
+    speaker.className = 'speaker';
+    const images = document.createElement('div');
+    images.className = 'images';
+    const personImage = document.createElement('img');
+    personImage.className = 'man';
+    const detail = document.createElement('div');
+    detail.className = 'details';
+    const nam = document.createElement('h4');
+    const job = document.createElement('h5');
+    const hr = document.createElement('hr');
+    const description = document.createElement('p');
+    speaker.appendChild(images);
+    images.appendChild(speakerImage);
+    images.appendChild(personImage);
+    detail.appendChild(nam);
+    detail.appendChild(job);
+    detail.append(hr, description);
+    speaker.appendChild(detail);
+    personImage.src = ArraySpeakers[i].path;
+    nam.textContent = ArraySpeakers[i].name;
+    job.textContent = ArraySpeakers[i].job;
+    description.textContent = ArraySpeakers[i].description;
+    containerSpeaker.appendChild(speaker);
+  }
+};

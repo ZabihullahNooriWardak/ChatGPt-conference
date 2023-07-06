@@ -83,7 +83,7 @@ div.card{
 }
 
 section.home p:first-child {
-  margin-top: 2rem;
+  margin-top: 5rem;
   color: var(--redColor);
   font-size: 2.2rem;
   font-family: "Lato", sans-serif;
@@ -409,8 +409,10 @@ footer.second p {
     margin-right: 2rem;
   }
 
-  .header-second ul li:first-child {
+  .header-second ul li:first-child a{
     color: var(--redColor);
+    text-decoration: none;
+
   }
 
   .header-second ul li:last-child {

@@ -14,9 +14,11 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
 .header-container {
   display: none;
 }
+
 #bx {
   font-size: 3rem;
   margin-top: 2rem;
@@ -24,7 +26,9 @@ html {
 }
 
 /* Burger Menu items  */
+
 /* burger-menue actions */
+
 .burger-menue {
   display: none;
   flex-direction: column;
@@ -60,6 +64,7 @@ html {
   color: white;
   text-decoration: none;
 }
+
 .background-img > p:first-child {
   margin-bottom: 2rem;
   margin-top: 5rem;
@@ -68,32 +73,43 @@ html {
   font-size: 2.2rem;
   font-family: "Lato", sans-serif;
 }
+
 .background-img {
   background-image: url(images/backgroundIstock.jpg);
   background-size: cover;
   padding-bottom: 5rem;
 }
+
 #second {
   text-align: center;
   font-family: lato, sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
+  line-height: 2rem;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
 }
+
 .home h1 {
   color: var(--redColor);
   font-size: 3.8rem;
   font-family: "Lato", sans-serif;
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
+
 .contact-header {
   margin-top: 4rem;
   color: #7a7a7a;
   text-align: center;
   font-family: Lato, sans-serif;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-style: normal;
 }
+
 .about-logo-footer h3 {
   margin-top: 4rem;
   text-align: center;
@@ -102,6 +118,7 @@ html {
   font-style: normal;
   font-weight: 700;
 }
+
 .about-logo-footer hr {
   width: 5rem;
   height: 0.2rem;
@@ -109,6 +126,7 @@ html {
   background-color: #a04038;
   border: none;
 }
+
 .about-logo-footer p {
   color: #838383;
   text-align: center;
@@ -117,6 +135,7 @@ html {
   font-style: normal;
   font-weight: 700;
 }
+
 .about-logo-footer img {
   height: 10rem;
   border-radius: 2rem;
@@ -124,6 +143,7 @@ html {
   margin: 3rem auto;
   display: block;
 }
+
 .footer-about h3 {
   font-family: Lato;
   font-size: 20px;
@@ -131,6 +151,7 @@ html {
   font-weight: 700;
   text-align: center;
 }
+
 .footer-about hr {
   width: 5rem;
   height: 0.2rem;
@@ -138,47 +159,152 @@ html {
   background-color: #a04038;
   border: none;
 }
-.footer-about .images{
-  background-color: rgb(211, 102, 81);
+
+div.firstImage:first-child {
+  padding-top: 180px;
 }
-.footer-about .images img:hover{
-  opacity: 1;
+
+div.images {
+  margin-top: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
 }
-.footer-about .images img {
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  max-height: 100%;
-  opacity: 0.5;
-}
-.firstImage{
+
+div.images-second {
   position: relative;
 }
-.firstImage :first-child{
-  font-size: 2.9rem;
-  font-weight: 700;
-  font-family: lato, sans-serif;
-color: white;
+div.images-second:first-child {
   position: absolute;
-  top: 30px;
+  left: 30px;
+  top: 80px;
+  color: white;
+  font-size: 2.2rem;
 }
+div.first {
+  background-color: rgb(184, 76, 56);
+}
+div.second {
+  background-color: rgb(184, 76, 56);
+}
+.secondImage {
+  opacity: 0.2;
+  width: 100%;
+  height: 180px;
+  background-image: url(images/confernece2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.images p {
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  color: white;
+  font-size: 2.2rem;
+}
+.images-second .pSecond {
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  color: white;
+  font-size: 2.2rem;
+}
+
+div.firstImage {
+  opacity: 0.2;
+  width: 100%;
+  background-image: url(images/conference1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .footer-about p {
   color: #838383;
   text-align: center;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
 }
+
+footer.first {
+  margin-top: 2rem;
+  padding: 3rem 0;
+  background-color: rgb(65, 66, 70);
+}
+
+footer.first p:first-child {
+  color: white;
+  font-family: lato, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+ .footer-about{
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+ }
+
+footer.first hr {
+  width: 5rem;
+  height: 0.2rem;
+  background-color: var(--redColor);
+  border: none;
+  margin: 1.3rem auto;
+}
+
+footer.second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+footer.second img {
+  width: 14%;
+  border-radius: 1rem;
+}
+
+footer.second p {
+  font-family: lato, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   #bx {
     display: none;
   }
+  html{
+    font-size: 63.5%;
+  }
+  .about-logo-footer img{
+    width: 30%;
+  }
+  div.company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .images-container{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    align-items: center;
+  }
+  .images-second{
+    width: 400px;
+  }
 
+.images{
+  width: 400px;
+}
   .header-container {
     flex-direction: column;
     display: flex;
   }
+
   .header-first {
     background-color: rgb(62, 62, 62);
     display: flex;
@@ -186,6 +312,7 @@ color: white;
     align-items: center;
     height: 4rem;
   }
+
   .header-first ul {
     width: auto;
     display: flex;
@@ -199,6 +326,7 @@ color: white;
     font-size: 2rem;
     color: #fff;
   }
+
   .header-second ul li {
     margin-right: 2rem;
   }

@@ -5,3 +5,7 @@ let burgerMenu=document.getElementById('bx');
 burgerMenu.addEventListener('click',function(){
 document.querySelector('.burger-menue').style.display='inline';
 });
+
+document.getElementById('zabih').addEventListener('click',function(){
+    document.querySelector('.burger-menue').style.display='none';
+})

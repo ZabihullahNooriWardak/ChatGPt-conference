@@ -124,7 +124,7 @@ If you like this project: As this is open source project you can help with build
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-I would like to thank for checking the project source code and your suggestion and feedback
+I would like to thank Cindy Shin in Behance for making the beautiful UI design.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>

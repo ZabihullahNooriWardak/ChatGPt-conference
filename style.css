@@ -16,6 +16,7 @@ html {
 }
 
 /* Burger Menu items  */
+
 /* burger-menue actions */
 .burger-menue {
   display: none;
@@ -33,23 +34,28 @@ html {
 }
 
 .burger-menue i {
-  
   margin-top: 4rem;
   margin-left: 3rem;
 }
-.burger-menue ul{
+
+.burger-menue ul {
   text-align: center;
 }
+
 .burger-menue ul li {
   padding-bottom: 1.5rem;
   list-style-type: none;
   margin-top: 3rem;
   border-bottom: 1px solid #6f6c6b;
 }
+
+section.program a {
+  display: none;
+}
+
 .burger-menue ul li a {
   color: white;
   text-decoration: none;
-
 }
 
 /*  hero section */
@@ -64,15 +70,16 @@ html {
   margin-left: 2rem;
 }
 
-div.card:hover{
-transform: scale(1.08);
-background-color: black;
-box-shadow: 0 3px 4px rgb(255, 255, 255), 0 -3px 7px rgb(255, 255, 255);
+div.card {
+  transition: all 0.5s ease;
+}
 
+div.card:hover {
+  transform: scale(1.08);
+  background-color: black;
+  box-shadow: 0 3px 4px rgb(255, 255, 255), 0 -3px 7px rgb(255, 255, 255);
 }
-div.card{
-    transition: all 0.5s ease;
-}
+
 .home {
   height: 90vh;
   display: flex;
@@ -80,6 +87,28 @@ div.card{
   justify-content: space-around;
   align-items: start;
   margin-left: 2rem;
+}
+
+.card p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+footer.second p {
+  font-family: lato, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+div.details p {
+  font-size: 13px;
+  text-overflow: hidden;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
 section.home p:first-child {
@@ -102,6 +131,16 @@ section.home p#second {
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.255px;
+}
+
+.card h4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.47rem;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--redColor);
 }
 
 section.home h4 {
@@ -133,6 +172,15 @@ section.program {
   background-size: contain;
   height: auto;
   padding-bottom: 2rem;
+}
+
+.speakers h3 {
+  font-size: 20px;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 2rem;
 }
 
 section.program h3 {
@@ -168,28 +216,6 @@ div.card i {
   color: white;
 }
 
-.card h4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 1.47rem;
-  font-family: Lato, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  color: var(--redColor);
-}
-
-.card p {
-  color: #fff;
-  font-size: 1.5rem;
-  font-family: Lato, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-}
-
-section.program a {
-  display: none;
-}
-
 section.program div.join {
   margin: 2rem auto;
   width: 70%;
@@ -204,15 +230,6 @@ section.program div.join {
 }
 
 /* Speaker section */
-
-.speakers h3 {
-  font-size: 20px;
-  text-align: center;
-  font-family: Lato, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  margin-top: 2rem;
-}
 
 div.details {
   margin-left: 3rem;
@@ -246,6 +263,17 @@ div.details h5 {
   font-weight: 700;
 }
 
+section.speakers hr {
+  width: 8rem;
+  height: 0.3rem;
+  background-color: red;
+  margin: 2rem auto;
+}
+
+footer.first hr {
+  width: 5rem;
+}
+
 .speakers div.speaker .details hr {
   margin: 1rem 0;
   width: 3rem;
@@ -253,13 +281,6 @@ div.details h5 {
   background-color: grey;
 }
 
-div.details p {
-  font-size: 13px;
-  text-overflow: hidden;
-  font-family: Lato, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-}
 div.speaker div.images img.man {
   position: relative;
   bottom: 60px;
@@ -268,15 +289,8 @@ div.speaker div.images img.man {
   height: 150px;
 }
 
-section.speakers hr {
-  width: 8rem;
-  height: 0.3rem;
-  background-color: red;
-  margin: 2rem auto;
-}
-
 footer.first {
-    padding: 3rem 0;
+  padding: 3rem 0;
   background-color: rgb(65, 66, 70);
 }
 
@@ -285,10 +299,6 @@ footer.first p:first-child {
   font-family: lato, sans-serif;
   font-size: 3rem;
   text-align: center;
-}
-
-footer.first hr {
-  width: 5rem;
 }
 
 div.company img {
@@ -301,22 +311,18 @@ div.company {
   justify-content: space-around;
 }
 
-footer.second{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2rem auto;
+footer.second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
 }
+
 footer.second img {
   width: 14%;
   border-radius: 1rem;
 }
 
-footer.second p {
-  font-family: lato, sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-}
 @media screen and (min-width: 768px) {
   div.container-speaker {
     display: flex;
@@ -405,14 +411,14 @@ footer.second p {
     height: auto;
     padding-bottom: 0;
   }
+
   .header-second ul li {
     margin-right: 2rem;
   }
 
-  .header-second ul li:first-child a{
+  .header-second ul li:first-child a {
     color: var(--redColor);
     text-decoration: none;
-
   }
 
   .header-second ul li:last-child {

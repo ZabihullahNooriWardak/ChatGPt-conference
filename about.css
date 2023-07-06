@@ -65,6 +65,38 @@ html {
   text-decoration: none;
 }
 
+.about-logo-footer p {
+  color: #838383;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.footer-about p {
+  color: #838383;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+div.images p {
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  color: white;
+  font-size: 2.2rem;
+}
+
+footer.second p {
+  font-family: lato, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .background-img > p:first-child {
   margin-bottom: 2rem;
   margin-top: 5rem;
@@ -81,7 +113,6 @@ html {
 }
 
 #second {
-  text-align: center;
   font-family: lato, sans-serif;
   font-size: 1.4rem;
   font-style: normal;
@@ -127,15 +158,6 @@ html {
   border: none;
 }
 
-.about-logo-footer p {
-  color: #838383;
-  text-align: center;
-  font-family: Lato, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-}
-
 .about-logo-footer img {
   height: 10rem;
   border-radius: 2rem;
@@ -145,7 +167,7 @@ html {
 }
 
 .footer-about h3 {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -158,6 +180,14 @@ html {
   margin: 1.5rem auto;
   background-color: #a04038;
   border: none;
+}
+
+div.firstImage {
+  opacity: 0.2;
+  width: 100%;
+  background-image: url(images/conference1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 div.firstImage:first-child {
@@ -173,6 +203,7 @@ div.images {
 div.images-second {
   position: relative;
 }
+
 div.images-second:first-child {
   position: absolute;
   left: 30px;
@@ -180,12 +211,15 @@ div.images-second:first-child {
   color: white;
   font-size: 2.2rem;
 }
+
 div.first {
   background-color: rgb(184, 76, 56);
 }
+
 div.second {
   background-color: rgb(184, 76, 56);
 }
+
 .secondImage {
   opacity: 0.2;
   width: 100%;
@@ -195,36 +229,12 @@ div.second {
   background-size: cover;
 }
 
-div.images p {
-  position: absolute;
-  left: 30px;
-  top: 80px;
-  color: white;
-  font-size: 2.2rem;
-}
 .images-second .pSecond {
   position: absolute;
   left: 30px;
   top: 80px;
   color: white;
   font-size: 2.2rem;
-}
-
-div.firstImage {
-  opacity: 0.2;
-  width: 100%;
-  background-image: url(images/conference1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.footer-about p {
-  color: #838383;
-  text-align: center;
-  font-family: Lato, sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
 }
 
 footer.first {
@@ -240,11 +250,11 @@ footer.first p:first-child {
   text-align: center;
 }
 
- .footer-about{
+.footer-about {
   width: 90%;
   text-align: center;
   margin: 0 auto;
- }
+}
 
 footer.first hr {
   width: 5rem;
@@ -266,40 +276,40 @@ footer.second img {
   border-radius: 1rem;
 }
 
-footer.second p {
-  font-family: lato, sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 @media screen and (min-width: 768px) {
   #bx {
     display: none;
   }
-  html{
+
+  html {
     font-size: 63.5%;
   }
-  .about-logo-footer img{
+
+  .about-logo-footer img {
     width: 30%;
   }
+
   div.company {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .images-container{
+
+  .images-container {
     display: flex;
     justify-content: center;
     column-gap: 2rem;
     align-items: center;
   }
-  .images-second{
+
+  .images-second {
     width: 400px;
   }
 
-.images{
-  width: 400px;
-}
+  .images {
+    width: 400px;
+  }
+
   .header-container {
     flex-direction: column;
     display: flex;

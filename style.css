@@ -206,7 +206,7 @@ section.program hr {
   height: 11rem;
   align-items: center;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 100%;
   background-color: rgb(60, 63, 70);
 }
 
@@ -353,6 +353,7 @@ footer.second img {
   }
 
   .card {
+    padding: 1rem;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;

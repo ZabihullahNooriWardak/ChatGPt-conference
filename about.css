@@ -276,6 +276,12 @@ footer.second img {
   border-radius: 1rem;
 }
 
+div.company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 @media screen and (min-width: 768px) {
   #bx {
     display: none;
@@ -287,12 +293,6 @@ footer.second img {
 
   .about-logo-footer img {
     width: 30%;
-  }
-
-  div.company {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
   }
 
   .images-container {

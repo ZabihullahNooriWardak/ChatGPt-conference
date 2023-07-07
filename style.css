@@ -1,0 +1,466 @@
+/* link to css Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --redColor: rgb(236, 67, 39);
+}
+
+html {
+  font-size: 48%;
+}
+
+/* Burger Menu items  */
+
+/* burger-menue actions */
+.burger-menue {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #3c3a39;
+  color: #fff5e1;
+  font-size: 3.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 4.4rem;
+}
+
+.burger-menue i {
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+
+.burger-menue ul {
+  text-align: center;
+}
+
+.burger-menue ul li {
+  padding-bottom: 1.5rem;
+  list-style-type: none;
+  margin-top: 3rem;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+section.program a {
+  display: none;
+}
+
+.burger-menue ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*  hero section */
+
+.header-container {
+  display: none;
+}
+
+#bx {
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+div.card {
+  transition: all 0.5s ease;
+}
+
+div.card:hover {
+  transform: scale(1.08);
+  background-color: black;
+  box-shadow: 0 3px 4px rgb(255, 255, 255), 0 -3px 7px rgb(255, 255, 255);
+}
+
+.home {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  margin-left: 2rem;
+}
+
+.card p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+footer.second p {
+  font-family: lato, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+div.details p {
+  font-size: 13px;
+  text-overflow: hidden;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+section.home p:first-child {
+  margin-top: 5rem;
+  color: var(--redColor);
+  font-size: 2.2rem;
+  font-family: "Lato", sans-serif;
+}
+
+section.home h1 {
+  color: var(--redColor);
+  font-size: 3.8rem;
+  font-family: "Lato", sans-serif;
+}
+
+section.home p#second {
+  color: #515151;
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.255px;
+}
+
+.card h4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.47rem;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--redColor);
+}
+
+section.home h4 {
+  color: #595959;
+  font-size: 2.3rem;
+  font-family: "Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+
+section.home h6 {
+  color: #868686;
+  font-size: 2rem;
+  font-family: "Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.home-container {
+  /* width: 100vw; */
+  background-image: url(images/backgroundIstock.jpg);
+  background-size: contain;
+}
+
+/* program section mobile  */
+
+section.program {
+  background-image: url(images/programBackground.png);
+  background-size: contain;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.speakers h3 {
+  font-size: 20px;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+section.program h3 {
+  padding-top: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+section.program hr {
+  width: 8rem;
+  height: 0.2rem;
+  margin: 2rem auto;
+  background-color: red;
+}
+
+.card {
+  margin-bottom: 0.268rem;
+  display: flex;
+  height: 11rem;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  background-color: rgb(60, 63, 70);
+}
+
+div.card i {
+  margin-left: 1rem;
+  font-size: 2.8rem;
+  color: white;
+}
+
+section.program div.join {
+  margin: 2rem auto;
+  width: 70%;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--redColor);
+}
+
+/* Speaker section */
+
+div.details {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+div.speaker {
+  display: flex;
+}
+
+div.speaker img.speaker {
+  height: 70px;
+  width: 70px;
+}
+
+div.details h4 {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+div.details h5 {
+  margin-bottom: 1rem;
+  color: #f78c89;
+  font-size: 17px;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+section.speakers hr {
+  width: 8rem;
+  height: 0.3rem;
+  background-color: red;
+  margin: 2rem auto;
+}
+
+footer.first hr {
+  width: 5rem;
+}
+
+.speakers div.speaker .details hr {
+  margin: 1rem 0;
+  width: 3rem;
+  height: 0.2rem;
+  background-color: grey;
+}
+
+div.speaker div.images img.man {
+  position: relative;
+  bottom: 60px;
+  left: 17px;
+  width: 150px;
+  height: 150px;
+}
+
+footer.first {
+  padding: 3rem 0;
+  background-color: rgb(65, 66, 70);
+}
+
+footer.first p:first-child {
+  color: white;
+  font-family: lato, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+div.company img {
+  margin-bottom: 2rem;
+}
+
+div.company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer.second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+footer.second img {
+  width: 14%;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  div.container-speaker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  div.speaker {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  html {
+    font-size: 63.2%;
+  }
+
+  section.home h6 {
+    margin-bottom: 3rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90vw;
+    margin: 0 auto;
+    column-gap: 0.3rem;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .header-container {
+    flex-direction: column;
+    display: flex;
+  }
+
+  div.join {
+    display: none;
+  }
+
+  .program a:last-child {
+    display: block;
+    margin: 3rem auto;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 3rem;
+  }
+
+  #bx {
+    display: none;
+  }
+
+  .header-first {
+    background-color: rgb(62, 62, 62);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4rem;
+  }
+
+  .header-first ul {
+    width: auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+  }
+
+  .header-first ul li {
+    margin-right: 3rem;
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  section.program {
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .header-second ul li {
+    margin-right: 2rem;
+  }
+
+  .header-second ul li:first-child a {
+    color: var(--redColor);
+    text-decoration: none;
+  }
+
+  .header-second ul li:last-child {
+    border: 4px solid var(--redColor);
+    color: var(--redColor);
+    padding: 0.6rem;
+  }
+
+  .header-second {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fafafa;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header-second ul {
+    font-family: "Lato", sans-serif;
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-second img {
+    width: 8%;
+    border-radius: 1rem;
+  }
+
+  div.details p {
+    font-size: 14px;
+  }
+
+  section.home {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    align-items: flex-start;
+    margin-left: 9rem;
+    justify-content: space-around;
+  }
+}

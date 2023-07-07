@@ -1,0 +1,377 @@
+/* link to css Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+html {
+  font-size: 48%;
+}
+
+:root {
+  --redColor: rgb(236, 67, 39);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: none;
+}
+
+#bx {
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+/* Burger Menu items  */
+
+/* burger-menue actions */
+
+.burger-menue {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #3c3a39;
+  color: #fff5e1;
+  font-size: 3.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 4.4rem;
+}
+
+.burger-menue i {
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+
+.burger-menue ul {
+  text-align: center;
+}
+
+.burger-menue ul li {
+  padding-bottom: 1.5rem;
+  list-style-type: none;
+  margin-top: 3rem;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+.burger-menue ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.about-logo-footer p {
+  color: #838383;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.footer-about p {
+  color: #838383;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+div.images p {
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  color: white;
+  font-size: 2.2rem;
+}
+
+footer.second p {
+  font-family: lato, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.background-img > p:first-child {
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  text-align: center;
+  color: var(--redColor);
+  font-size: 2.2rem;
+  font-family: "Lato", sans-serif;
+}
+
+.background-img {
+  background-image: url(images/backgroundIstock.jpg);
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+
+#second {
+  font-family: lato, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.home h1 {
+  color: var(--redColor);
+  font-size: 3.8rem;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-header {
+  margin-top: 4rem;
+  color: #7a7a7a;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.about-logo-footer h3 {
+  margin-top: 4rem;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.about-logo-footer hr {
+  width: 5rem;
+  height: 0.2rem;
+  margin: 2rem auto;
+  background-color: #a04038;
+  border: none;
+}
+
+.about-logo-footer img {
+  height: 10rem;
+  border-radius: 2rem;
+  width: 90%;
+  margin: 3rem auto;
+  display: block;
+}
+
+.footer-about h3 {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer-about hr {
+  width: 5rem;
+  height: 0.2rem;
+  margin: 1.5rem auto;
+  background-color: #a04038;
+  border: none;
+}
+
+div.firstImage {
+  opacity: 0.2;
+  width: 100%;
+  background-image: url(images/conference1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.firstImage:first-child {
+  padding-top: 180px;
+}
+
+div.images {
+  margin-top: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+div.images-second {
+  position: relative;
+}
+
+div.images-second:first-child {
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  color: white;
+  font-size: 2.2rem;
+}
+
+div.first {
+  background-color: rgb(184, 76, 56);
+}
+
+div.second {
+  background-color: rgb(184, 76, 56);
+}
+
+.secondImage {
+  opacity: 0.2;
+  width: 100%;
+  height: 180px;
+  background-image: url(images/confernece2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.images-second .pSecond {
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  color: white;
+  font-size: 2.2rem;
+}
+
+footer.first {
+  margin-top: 2rem;
+  padding: 3rem 0;
+  background-color: rgb(65, 66, 70);
+}
+
+footer.first p:first-child {
+  color: white;
+  font-family: lato, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.footer-about {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer.first hr {
+  width: 5rem;
+  height: 0.2rem;
+  background-color: var(--redColor);
+  border: none;
+  margin: 1.3rem auto;
+}
+
+footer.second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+footer.second img {
+  width: 14%;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  #bx {
+    display: none;
+  }
+
+  html {
+    font-size: 63.5%;
+  }
+
+  .about-logo-footer img {
+    width: 30%;
+  }
+
+  div.company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .images-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    align-items: center;
+  }
+
+  .images-second {
+    width: 400px;
+  }
+
+  .images {
+    width: 400px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .header-first {
+    background-color: rgb(62, 62, 62);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4rem;
+  }
+
+  .header-first ul {
+    width: auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+  }
+
+  .header-first ul li {
+    margin-right: 3rem;
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .header-second ul li {
+    margin-right: 2rem;
+  }
+
+  .header-second ul li:first-child a {
+    color: var(--redColor);
+    text-decoration: none;
+  }
+
+  .header-second ul li:last-child {
+    border: 4px solid var(--redColor);
+    color: var(--redColor);
+    padding: 0.6rem;
+  }
+
+  .header-second {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fafafa;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header-second ul {
+    font-family: "Lato", sans-serif;
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-second img {
+    width: 8%;
+    border-radius: 1rem;
+  }
+}
